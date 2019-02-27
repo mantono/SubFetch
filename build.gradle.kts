@@ -45,14 +45,6 @@ dependencies {
 	// Enable for applications
 	// runtime("ch.qos.logback", "logback-classic", "1.2.3")
 
-	// Ktor
-	implementation("io.ktor", "ktor-server-core", Version.KTOR)
-	implementation("io.ktor", "ktor-server-netty", Version.KTOR)
-	implementation("io.ktor", "ktor-client-auth-basic", Version.KTOR)
-	implementation("io.ktor", "ktor-auth", Version.KTOR)
-	implementation("io.ktor", "ktor-jackson", Version.KTOR)
-	implementation("io.ktor", "ktor-auth-jwt", Version.KTOR)
-
 	// Jackson
 	implementation("com.fasterxml.jackson.core", "jackson-core", Version.JACKSON)
 	implementation("com.fasterxml.jackson.module", "jackson-module-kotlin", Version.JACKSON)
@@ -60,7 +52,8 @@ dependencies {
 
 	// Other
 	implementation("com.mantono", "pyttipanna", "1.0.0")
-	implementation("com.auth0", "java-jwt", "3.7.0")
+	implementation("com.squareup.okhttp3:okhttp:3.13.1")
+	implementation("org.apache.xmlrpc", "xmlrpc-client", "3.1.3")
 
 	// Junit
 	testCompile("org.junit.jupiter", "junit-jupiter-api", Version.JUNIT)

@@ -1,4 +1,4 @@
-/**
+package com.mantono; /**
  * Hash code is based on Media Player Classic. In natural language it calculates: size + 64bit
  * checksum of the first and last 64k (even if they overlap because the file is smaller than
  * 128k).
